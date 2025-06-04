@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #E6F0FA 0%, #B3D4FF 100%);
+}
+
+/* Estilos del Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-bottom: 2px solid #1E90FF;
+    box-shadow: 0 2px 10px rgba(30, 144, 255, 0.1);
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1E90FF !important;
+}
+
+.navbar-brand i {
+    color: #1E90FF;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #1E90FF !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #187BCD !important;
+}
+
+.nav-link.btn-danger {
+    background-color: #FF6347;
+    border-color: #FF6347;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.nav-link.btn-danger:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+}
+
+/* Sección de Configuración */
+.settings-section {
+    padding: 60px 0;
+    min-height: calc(100vh - 140px);
+}
+
+.settings-container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(230, 240, 250, 0.95) 100%);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(30, 144, 255, 0.2);
+    border: 3px solid #B3D4FF;
+    transition: transform 0.3s ease;
+}
+
+.settings-container:hover {
+    transform: translateY(-5px);
+}
+
+.settings-container h2 {
+    font-size: 32px;
+    color: #1E90FF;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.settings-container h2 i {
+    color: #1E90FF;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #F5F9FF;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 26px;
+    color: #1E90FF;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Estilos para Sensores IoT */
+.sensor-list div {
+    background-color: rgba(30, 144, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.sensor-list div:hover {
+    background-color: rgba(30, 144, 255, 0.1);
+}
+
+.sensor-list span {
+    font-size: 16px;
+    color: #555;
+}
+
+.sensor-list i {
+    color: #1E90FF;
+}
+
+.btn-danger {
+    background-color: #FF6347;
+    border-color: #FF6347;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-danger:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color: #90EE90;
+    border-color: #90EE90;
+    color: #333;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-success:hover {
+    background-color: #77DD77;
+    transform: scale(1.05);
+}
+
+/* Estilos para Campos de Formulario (Meta Diaria y Notificaciones) */
+.form-label {
+    font-size: 16px;
+    color: #1E90FF;
+    font-weight: 500;
+}
+
+.input-group-text {
+    background-color: #F5F9FF;
+    border: 1px solid #B3D4FF;
+    border-right: none;
+    color: #1E90FF;
+}
+
+.form-control {
+    border: 1px solid #B3D4FF;
+    border-radius: 0 8px 8px 0;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #F5F9FF;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.3);
+    outline: none;
+}
+
+/* Estilos para Notificaciones */
+.form-check {
+    margin-bottom: 20px;
+}
+
+.form-check-input {
+    border: 1px solid #B3D4FF;
+    width: 20px;
+    height: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-check-input:checked {
+    background-color: #1E90FF;
+    border-color: #1E90FF;
+}
+
+.form-check-input:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.3);
+    outline: none;
+}
+
+.form-check-label {
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+}
+
+#email-field {
+    transition: opacity 0.3s ease;
+}
+
+/* Botones de Acción */
+.btn-primary {
+    background-color: #1E90FF;
+    border-color: #1E90FF;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: #187BCD;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #6C757D;
+    border-color: #6C757D;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5A6268;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #1E90FF 0%, #4682B4 100%);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
